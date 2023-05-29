@@ -23,9 +23,7 @@ def solution(n, arr1, arr2):
                 
                 
         for a, s in enumerate(list3):
-                # print(a, s, list4[a])
                 for b, t in enumerate(s):
-                        # print(b, t, list4[a][b])
                         if t == '1' or list4[a][b] == '1':
                                 list5.append("#")
                         elif t == '0' and list4[a][b] == '0':

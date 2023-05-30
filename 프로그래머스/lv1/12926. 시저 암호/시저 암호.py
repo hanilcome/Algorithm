@@ -4,20 +4,17 @@ def solution(s, n):
         answer=''
         
         
-        for a, i in enumerate(s):
+        for i in s:
                 if i in low:
                         if low.index(i)+n*2 > 50:
-                                # print(low[n*2-2])
+
                                 answer += low[(low.index(i)+n*2)-52]
                         else:
-                                # print(low[low.index(i)+n*2])
                                 answer += low[low.index(i)+n*2]
                 if i in up:
                         if up.index(i)+n*2 > 50:
-                                # print(low[n*2-2])
                                 answer += up[(up.index(i)+n*2)-52]
                         else:
-                                # print(low[low.index(i)+n*2])
                                 answer += up[up.index(i)+n*2]
                 if i == " ":
                         answer += " "

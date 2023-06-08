@@ -11,9 +11,9 @@ def solution(s):
         if same == 0:
             same += 1
         elif same != another:
-            if slist[0] == slist[a]:
+            if slist[0] == n:
                 same += 1
-            elif slist[0] != slist[a]:
+            elif slist[0] != n:
                 another += 1
         else:   
             answer += 1

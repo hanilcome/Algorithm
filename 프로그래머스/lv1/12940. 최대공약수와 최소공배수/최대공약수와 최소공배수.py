@@ -13,7 +13,6 @@ def solution(n, m):
                 answer.append(a)
         num += 1
     answer.sort()
-    print("1", answer)
     
     for a in answer:
         if answer.count(a) > 1 and a != 1:
@@ -21,8 +20,6 @@ def solution(n, m):
     answer = list(set(answer_set))
     
     answer.sort(reverse=True)
-    print("2",answer)
-    
     
     num = 0
     if answer:
@@ -33,7 +30,6 @@ def solution(n, m):
             num += 1       
             if nlist[0] == 1:
                 break 
-        print(nlist)
         answer_list += answer
     else:
         answer_list.append(1)
